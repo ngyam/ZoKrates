@@ -22,6 +22,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     pkg-config \
     python-markdown \
     git \
+    nano \
     && rm -rf /var/lib/apt/lists/* \
     && git clone https://github.com/scipr-lab/libsnark.git $LIBSNARK_SOURCE_PATH \
     && git -C $LIBSNARK_SOURCE_PATH checkout $LIBSNARK_COMMIT \
